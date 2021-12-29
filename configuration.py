@@ -1,6 +1,6 @@
-SERVER_PORT = 5437  # Emily Amit Noa Friends
-CLIENT_PORT = 5437
+SERVER_PORT = 2030
+CLIENT_PORT = 2030
 DESTINATION_PORT = 13117
 MAGIC_COOKIE = 0xabcddcba
 MESSAGE_TYPE = 0x2
-CLIENT_NAME = "The Question Mark From Oren"
+CLIENT_NAME = "insert name"
