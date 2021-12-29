@@ -81,8 +81,6 @@ class Server:
                 # gets the answer from the client, if exists
                 client_answer = client_socket.recv(1).decode()
                 if client_answer is not None:
-                    #print(client_answer)
-                    # self.mutex.acquire(True)
                     answer[0] = client_answer
                     answer[1] = player_name
             except Exception as e:

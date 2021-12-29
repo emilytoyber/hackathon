@@ -50,13 +50,11 @@ while True:
         data = struct.unpack("IBH", data)
         
         if data[0] == configuration.MAGIC_COOKIE and data[1] == configuration.MESSAGE_TYPE:
-            #print(type(address[0]), type(data[2]))
             conn = client.server_connection(address[0], data[2])
             print(conn)
-        print("before amit kaka")
         if not conn:
            continue
-        print("Connected!!!")
+        # print("Connected!!!")
         # game process
         conn.send(client.name.encode())
         question = conn.recv(1024).decode()  # receive response
@@ -68,7 +66,6 @@ while True:
             print("no answer from client!")
         server_response = conn.recv(1024).decode()  # receive response
         thread.StopThread()
-        print(server_response)
 
         print(f"{colorama.Fore.CYAN}{colorama.Style.BRIGHT}Server disconnected, listening for offer requests...")
 
