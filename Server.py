@@ -28,7 +28,7 @@ class Server:
         self.first_client = None
         self.second_client = None
         self.port_number = configuration.SERVER_PORT
-        self.host_name = "111"#gethostbyname(gethostbyname())
+        self.host_name = get_if_addr('eth1') # when we test it, we will convert it to 'eth2'
         self.UDP_port = configuration.DESTINATION_PORT
         self.free_flags = [True, True]
         self.mutex = threading.Lock()

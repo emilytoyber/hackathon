@@ -18,7 +18,7 @@ class Client:
 
     def _init_(self):
         self.UDP_port = configuration.DESTINATION_PORT
-        self.port_number = 2346 #configuration.CLIENT_PORT
+        self.port_number = configuration.CLIENT_PORT
         self.server_port = configuration.SERVER_PORT
         self.TCP_socket = None
         self.name = configuration.CLIENT_NAME
